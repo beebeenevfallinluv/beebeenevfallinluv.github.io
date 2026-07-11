@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yemalin KOSSOUHO | Portfolio</title>
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <div class="logo">Yemalin<span>.dev</span></div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil" class="active">Accueil</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= ACCUEIL ================= -->
+<section class="hero" id="accueil">
+  <div class="container hero-inner">
+    <div class="avatar">
+      <img src="../site/assets/photo-yemalin.png" alt="Portrait de Yemalin KOSSOUHO">
+    </div>
+    <h1>Yemalin <span class="highlight">KOSSOUHO</span></h1>
+    <p class="subtitle">Développeur Web Junior | Apprenant D-CLIC OIF</p>
+    <p class="hero-text">
+      Bienvenue sur mon portfolio. Je suis un passionné du numérique, engagé
+      dans une démarche de développement durable. Formé au programme D-CLIC
+      de l'OIF, j'ai appris à concevoir des solutions web qui allient
+      performance, esthétique et respect de l'environnement.
+    </p>
+    <a href="../site/assets/CV-Yemalin-Kossouho.pdf" download class="btn">Télécharger mon CV</a>
+  </div>
+</section>
+
+<!-- ================= PARCOURS ================= -->
+<section class="bg-alt" id="parcours">
+  <div class="container">
+    <h2 class="section-title">Mon Parcours d'Apprentissage</h2>
+    <div class="timeline">
+      <article class="timeline-card">
+        <h3>S1: Fondamentaux</h3>
+        <p>Immersion dans la culture numérique, compréhension des bases du Web et création de cartes mentales stratégiques.</p>
+      </article>
+      <article class="timeline-card">
+        <h3>S2: UI/UX &amp; Éco-design</h3>
+        <p>Conception centrée utilisateur sur Figma et Sketch, avec une intégration forte des principes d'écoconception.</p>
+      </article>
+      <article class="timeline-card">
+        <h3>S3: Structuration HTML</h3>
+        <p>Passage de la maquette au code : maîtrise de l'intégration sémantique et structuration de pages web robustes.</p>
+      </article>
+      <article class="timeline-card">
+        <h3>S4: Styling CSS3</h3>
+        <p>Mise en page avancée, design responsive et optimisation visuelle pour une expérience utilisateur fluide.</p>
+      </article>
+      <article class="timeline-card">
+        <h3>S5: Logique JS</h3>
+        <p>Apprentissage des fondamentaux de la programmation et création d'interactions utilisateur dynamiques.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJETS ================= -->
+<section id="projets">
+  <div class="container">
+    <h2 class="section-title">Réalisations &amp; Projets</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Carte Mentale</h3>
+        <p>Réalisation d'une carte mentale exhaustive sur les fondamentaux du Web pour structurer ma logique de développement.</p>
+      </article>
+      <article class="project-card">
+        <h3>UX/UI Design</h3>
+        <p>Conception de maquettes ergonomiques sur Figma et Sketch, intégrant des tests de parcours utilisateur.</p>
+      </article>
+      <article class="project-card">
+        <h3>Mon Portfolio SPA</h3>
+        <p>Développement de ce portfolio sous forme d'application monopage, optimisé pour l'écoconception et la performance.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact bg-alt" id="contact">
+  <div class="container">
+    <h2 class="section-title">Travaillons ensemble</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Votre email</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+      </div>
+      <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+      <button type="submit" class="btn">Envoyer le message</button>
+    </form>
+    <a href="mailto:yemalinschadasgedeonkossouho@gmail.com" class="mail-link">Contactez-moi par mail</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 - Yemalin KOSSOUHO | D-CLIC OIF</p>
+  </div>
+</footer>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
